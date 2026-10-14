@@ -8,7 +8,7 @@ $(document).ready(function() {
         var grammar = tracery.createGrammar(grammars[name]);
         $("#grammar").html(grammar.toText());
 
-        for (var i = 0; i < 10; i++) {
+        for (var i = 0; i < 1; i++) {
 
             var s = grammar.flatten("#origin#");
             console.log(s);
@@ -24,8 +24,7 @@ $(document).ready(function() {
     }
 
     setTimeout(function() {
-        loadGrammar("scifi");
-
+        loadGrammar("diddle");
     }, 10);
 
     $('#grammarSelect').on('change', function() {
